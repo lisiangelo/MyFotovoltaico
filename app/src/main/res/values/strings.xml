@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyFotovoltaico</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_lettura">Nuova Lettura</string>
+    <string name="title_activity_analisi_dati">Analisi Dati</string>
+    <string name="title_activity_bilancio">Bilancio S.P.</string>
+    <string name="title_activity_dati_letture">Storico Letture</string>
+
+    <string name="button_inserisci">Inserisci</string>
+    <string name="button_modifica">Modifica</string>
+    <string name="produzione">PRODUZIONE</string>
+    <string name="produzione_incentivi">PRODUZIONE --> INCENTIVI</string>
+    <string name="prelievi">PRELIEVI</string>
+    <string name="immissioni">IMMISSIONI</string>
+    <string name="autoconsumo">AUTOCONSUMO</string>
+    <string name="consumi">CONSUMI</string>
+    <string name="imm_prod">IMMISSIONI/PRODUZIONE</string>
+    <string name="auto_prod">AUTOCONSUMO/PRODUZIONE</string>
+    <string name="prel_consumi">PRELIEVI/CONSUMI</string>
+    <string name="auto_consumi">AUTOCONSUMO/CONSUMI</string>
+    <string name="btnReport">Report Tot</string>
+    <string name="title_activity_tabbed">tabbed</string>
+    <string name="title_activity_bilancio_sp">Bilancio Scambio sul Posto</string>
+    <string name="title_activity_rendimenti">Report Rendimenti del Periodo </string>
+    <string name="title_activity_newletture">Inserisci Nuova Lettura</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_analisi_dati_activit_x">Confronta due anni</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_nav">HomeActivityNav</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+</resources>

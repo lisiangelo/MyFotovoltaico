@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+            <item android:id="@+id/optionSettaggi"
+                android:title="Dati dell'impianto"/>
+            <item android:id="@+id/optionExport"
+                android:title="Esporta Dati"/>
+            <item android:id="@+id/optionImport"
+                android:title="Importa Dati"/>
+            <item android:id="@+id/optionEsci"
+                android:title="Esci"/>
+
+    </group>
+
+    <item
+        android:id="@+id/checkOnNotification"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        android:title="Attiva notifiche"
+        app:actionLayout="@layout/layout_switch"
+        />
+</menu>

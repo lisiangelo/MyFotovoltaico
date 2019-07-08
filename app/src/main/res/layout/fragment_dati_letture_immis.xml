@@ -1,0 +1,64 @@
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout
+        android:id="@+id/lista_immis_precedenti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        <TableRow
+            android:id="@+id/row_prod_titolo"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordo">
+            <TextView
+                android:id="@+id/row_prod_titolo_id"
+                android:textAlignment="center"
+                android:textColor="@color/bluet"
+                android:text="id"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/row_prod_titolo_data"
+                android:layout_width="270px"
+                android:textAlignment="center"
+                android:textColor="@color/bluet"
+                android:textSize="20dp"
+                android:text="DATA"
+                android:background="@color/ocra_alfa"/>
+            <TextView
+                android:id="@+id/row_prod_titolo_f1"
+                android:layout_width="150px"
+                android:textAlignment="center"
+                android:textColor="@color/bluet"
+                android:textSize="20dp"
+                android:text="F 1"/>
+            <TextView
+                android:id="@+id/row_prod_titolo_f2"
+                android:textAlignment="center"
+                android:layout_width="150px"
+                android:textColor="@color/bluet"
+                android:textSize="20dp"
+                android:text="F 2"/>
+            <TextView
+                android:id="@+id/row_prod_titolo_f3"
+                android:textAlignment="center"
+                android:layout_width="150px"
+                android:textColor="@color/bluet"
+                android:textSize="20dp"
+                android:text="F 3"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    </ScrollView>
+

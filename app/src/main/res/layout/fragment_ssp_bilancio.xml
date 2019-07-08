@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="it.android.j940549.fotovoltaico_material_design.BilancioSPActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/tabelladatiBilancio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@drawable/bordo_spinner">
+            <TableRow android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="200dp"
+                    android:layout_margin="5dp"
+                    android:text="COSTO ENERGIA PRELEVATA"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:id="@+id/costoenergiaprelevata"
+                    android:textColor="@color/red"/>
+
+            </TableRow>
+            <TableRow android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"
+                    android:layout_margin="5dp"
+                    android:text="RIMBORSO DA G.S.E SSP"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/rimborsiSSP"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+            </TableRow>
+<!--            <TableRow>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/linea_separazione"/>
+            </TableRow>
+    -->        <TableRow android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"
+                    android:layout_margin="5dp"
+                    android:text="SALDO DELL'ANNO"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/saldoSSP"
+                    android:textAlignment="center"
+                    android:textColor="@color/bluet"/>
+
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+</RelativeLayout>

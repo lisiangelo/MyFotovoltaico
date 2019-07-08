@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bordo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/titoloRendimenti">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Rendimenti del periodo"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/titoloRendimenti"
+        android:id="@+id/divRicerca">
+
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="dal "
+                android:textColor="@color/bluet"/>
+
+            <Spinner
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/meseIniz"
+                android:textAlignment="center"
+                android:background="@drawable/bordo_spinner"/>
+            <Spinner
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:id="@+id/annoIniz"
+                android:background="@drawable/bordo_spinner"/>
+
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text=" al "
+                android:textColor="@color/bluet"/>
+            <Spinner
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mese"
+                android:textAlignment="center"
+                android:background="@drawable/bordo_spinner"/>
+            <Spinner
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/anno"
+                android:textAlignment="center"
+                android:background="@drawable/bordo_spinner"/>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divRicerca">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+
+<TableRow
+    android:background="@drawable/bordo"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="14dp"
+        android:text="DATO"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:text="TOT"
+        android:background="@drawable/bordo_dati_tabella"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:padding="2dp"
+
+        android:text="F1"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:padding="2dp"
+
+        android:text="F2"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:padding="2dp"
+        android:text="F3"
+        android:gravity="center" />
+
+</TableRow>
+
+                <TableRow
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/icon_produzione" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:id="@+id/reptotprod"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:background="@drawable/bordo_dato_tabellasottolineato"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf1prod"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:background="@drawable/bordo_dati_tabellasx"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf2prod"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:background="@drawable/bordo_dati_tabellacentro"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:id="@+id/repf3prod"
+                        android:inputType="number"
+                        android:background="@drawable/bordo_dati_tabelladx"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+
+                </TableRow>
+
+        <TableRow
+                    android:layout_marginTop="5dp">
+                    <ImageView
+                        android:id="@+id/imageView_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/icona_incentivi" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/inctotprod"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:background="@drawable/bordo_dato_tabellasottolineato"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/incf1prod"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:background="@drawable/bordo_dati_tabellasx"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/incf2prod"
+                        android:background="@drawable/bordo_dati_tabellacentro"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/bordo_dati_tabelladx"
+                        android:id="@+id/incf3prod"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+
+
+                </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/icon_reduction_co2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/co2tot"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/bordo_dato_tabellasottolineato"
+                android:textAlignment="center"
+                android:textColor="@color/bluet"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/co2f1"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/bordo_dati_tabellasx"
+                android:textAlignment="center"
+                android:textColor="@color/bluet"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/co2f2"
+                android:background="@drawable/bordo_dati_tabellacentro"
+                android:gravity="center"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bordo_dati_tabelladx"
+                android:id="@+id/co2f3"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/icon_autoconsumo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/reptotautoc"
+                android:background="@drawable/bordo_dato_tabellasottolineato"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/repf1autoc"
+                android:gravity="center"
+                android:background="@drawable/bordo_dati_tabellasx"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/repf2autoc"
+                android:background="@drawable/bordo_dati_tabellacentro"
+                android:gravity="center"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/repf3autoc"
+                android:gravity="center"
+                android:background="@drawable/bordo_dati_tabelladx"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/icon_immissione"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/reptotimm"
+                android:layout_margin="5dp"
+                android:background="@drawable/bordo_dato_tabellasottolineato"
+                android:gravity="center"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/repf1imm"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/bordo_dati_tabellasx"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/repf2imm"
+                android:gravity="center"
+                android:background="@drawable/bordo_dati_tabellacentro"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/repf3imm"
+                android:gravity="center"
+                android:background="@drawable/bordo_dati_tabelladx"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/bluet" />
+
+
+        </TableRow>
+
+
+
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+
+                    android:gravity="center_vertical"
+                    android:src="@drawable/icon_prelievi" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/reptotprel"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/bordo_dato_tabellasottolineato"
+                    android:textAlignment="center"
+                    android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf1prel"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:background="@drawable/bordo_dati_tabellasx"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf2prel"
+                        android:gravity="center"
+                        android:background="@drawable/bordo_dati_tabellacentro"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf3prel"
+                        android:gravity="center"
+                        android:background="@drawable/bordo_dati_tabelladx"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+
+                </TableRow>
+
+
+
+
+
+                <TableRow
+                    android:layout_marginTop="5dp">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/icon_consumi_tot"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/reptotcons"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/bordo_dato_tabellasottolineato"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf1cons"
+                        android:background="@drawable/bordo_dati_tabellasx"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf2cons"
+                        android:gravity="center"
+                        android:background="@drawable/bordo_dati_tabellacentro"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/repf3cons"
+                        android:gravity="center"
+                        android:background="@drawable/bordo_dati_tabelladx"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/bluet"/>
+
+                </TableRow>
+</TableLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bordo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/titoloimpiegoProd">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Impiego produzione"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bordo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/titoloComposConsumi">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Composizione Consumi"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </GridLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

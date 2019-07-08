@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bottom_home"
+            android:icon="@drawable/icon_home"
+            android:title="Riepilogo"/>
+        <item
+            android:id="@+id/bottom_rendimenti"
+            android:icon="@drawable/icon_rendimenti"
+            android:title="Rendimenti" />
+        <item
+            android:id="@+id/bottom_analisi"
+            android:icon="@drawable/icon_analisi"
+            android:title="analisi dati" />
+        <item
+            android:id="@+id/bottom_bilancio"
+            android:icon="@drawable/icon_bilancio"
+            android:title="Bilancio" />
+    </group>
+
+
+</menu>
